@@ -351,7 +351,7 @@
 
     //service worker sandbox
     if (navigator.serviceWorker) {
-        navigator.serviceWorker.register('./scripts/sw.js' )
+        navigator.serviceWorker.register('./sw.js', {scope: './about'})
             .then(function (registration) {
                 console.log(registration);
             })
