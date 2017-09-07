@@ -351,7 +351,7 @@
 
     //service worker sandbox
     if (navigator.serviceWorker) {
-        navigator.serviceWorker.register('./sw.js', {scope: './about'})
+        navigator.serviceWorker.register('./sw.js' /*, {scope: './about'}*/)
             .then(function (registration) {
                 console.log(registration);
             })
@@ -384,3 +384,4 @@
 
 
 })();
+
